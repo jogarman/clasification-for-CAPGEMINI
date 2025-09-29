@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "clasification-for-capgemini"
+version = "0.1.0"
+description = "Pruebas Data Science CAPGEMINI"
+authors = ["jogarman"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+# Runtime deps used in the notebook/analysis
+numpy = "*"
+scikit-learn = "*"
+scipy = "*"
+matplotlib = "*"
+plotly = "*"
+pandas = "^2.3.2"
+
+[tool.poetry.group.dev.dependencies]
+# Dev tooling only (not required at runtime)
+black = ">=24.0"
+ruff = ">=0.6.0"
+nbqa = ">=1.9"
+pre-commit = ">=3.7"
+# Helpful for working with notebooks locally
+jupyter = "*"
+ipykernel = "*"
+deptry = "^0.20.0"
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312", "py313"]
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "C4", "PL"]
+ignore = [
+  # Ejemplos: ignora reglas opcionales muy restrictivas si molestan
+]
+
+[tool.ruff.format]
+quote-style = "preserve"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]

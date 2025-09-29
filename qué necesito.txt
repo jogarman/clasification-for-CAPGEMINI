@@ -1,0 +1,10 @@
+Una medida de proximidad
+Un criterio para la bondad
+Un algoritmo de similitud
+
+tipos de clustering:
+-partitioning. Conoces de antemano cuantos quieres
+-hierarchical
+
+
+Se hace: Hierarchical, hayo numero de clusters
