@@ -14,7 +14,6 @@ poetry install
 
 ## Ejecutar el notebook
 - Abre `clustering.ipynb` y ejecuta en orden desde el principio.
-- El dataset se carga con `plotly.express` (`px.data.gapminder()`), que retorna un `pandas.DataFrame`.
 
 ## Estructura
 - `clustering.ipynb`: análisis, dendrogramas y visualizaciones (clusters/continentes).
@@ -26,12 +25,3 @@ poetry install
 - Formateo: Black
 - Linter: Ruff
 - Notebooks: nbQA (black/ruff)
-
-## Exportar a HTML
-```bash
-poetry run jupyter nbconvert --to html --output-dir docs --output clustering.html clustering.ipynb
-```
-
-## Entrega
-- Puedes comprimir el repositorio o publicar en GitHub.
-- Nomenclatura sugerida: `JGA-TestDataScience-1.zip` o repo público con el mismo nombre.
