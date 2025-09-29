@@ -27,17 +27,6 @@ __pycache__/
 .pyre/
 .pytype/
 
-# Jupyter/nbconvert outputs
-*.html
-!docs/clustering.html
-
 # VS Code
 .vscode/*
 !.vscode/settings.json
-
-# Logs
-*.log
-
-# Documents (not source)
-*.pdf
-!docs/*.pdf
